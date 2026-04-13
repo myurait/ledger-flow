@@ -46,17 +46,16 @@ def _build_variables(args: argparse.Namespace) -> dict[str, str]:
 
 
 def _build_ledger_json(args: argparse.Namespace, setup_date: str) -> dict:
-    """Build the .ledger.json provenance snapshot."""
+    """Build the .ledger.json provenance snapshot.
+
+    Contains only framework provenance metadata. Project-specific policies
+    (language settings etc.) are stored in project-policies.md as the
+    canonical source.
+    """
     return {
         "version": _VERSION,
         "setupDate": setup_date,
         "setupBy": "ledger init",
-        "projectPolicies": {
-            "documentationLanguage": args.doc_lang,
-            "developmentLanguage": args.dev_lang or "",
-            "codeInternalLanguage": "English",
-            "productLanguages": [args.doc_lang],
-        },
     }
 
 

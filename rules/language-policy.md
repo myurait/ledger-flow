@@ -4,13 +4,12 @@ This policy applies to all project output including review evidence, development
 
 ## Project Policy
 
-These values are set per adopting project. The defaults below are placeholders.
+Project-specific language settings (Documentation Language, Development Language, Supported Product Languages) are the responsibility of each adopting project and are **not** defined in this file.
 
-- Development Language: (set during project setup)
-- Documentation Language: (set during project setup)
-- Code-Internal Language: English
-- Supported Product Languages: (set during project setup)
-- Canonical Source: This document is the authoritative source for project-specific language decisions and language-domain rules.
+- Canonical Source: `project-policies.md` at the project root of the adopting project (`development-docs/project-policies.md` after `ledger init`).
+- Code-Internal Language: English (fixed; does not vary per project).
+
+This document defines the language-domain rules and categories. For the actual language values used in a given project, consult `project-policies.md`.
 
 ## Language Categories
 
